@@ -3,16 +3,9 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// Angular material
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatIconModule} from '@angular/material/icon';
-import {MatSidenavModule} from '@angular/material/sidenav';
-import {MatListModule} from '@angular/material/list';
-import {MatButtonModule} from '@angular/material/button';
-import {MatDividerModule} from '@angular/material/divider';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 // Meus components
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
@@ -22,15 +15,8 @@ import {MatDividerModule} from '@angular/material/divider';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    // Angular material
-    MatToolbarModule,
-    MatMenuModule,
-    MatIconModule,
-    MatSidenavModule,
-    MatListModule,
-    MatButtonModule,
-    MatDividerModule
-    // Meu modulos
+    FlexLayoutModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
