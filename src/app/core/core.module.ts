@@ -15,7 +15,7 @@ import { HeaderComponent } from './header/header.component';
     MatIconModule,
     FlexLayoutModule,
     MatListModule,
-    MatDividerModule
+    MatDividerModule,
   ]
 })
 export class CoreModule { }

@@ -1,3 +1,4 @@
+import { ReportagensModule } from './reportagens/reportagens.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
@@ -16,7 +17,8 @@ import { CoreModule } from './core/core.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    CoreModule
+    CoreModule,
+    ReportagensModule
   ],
   providers: [],
   bootstrap: [AppComponent]

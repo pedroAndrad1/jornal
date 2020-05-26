@@ -1,0 +1,29 @@
+<!-- O fxFlex sao respectivamente as opcoes de grow, shrink e basis. grow = 1 para o card poder crescer
+para ocupar o espaco, shrink = 1 para poder diminuir para ocupar o espaco e basis = 0 para o tamanho ser
+o adequado para o espaco.
+
+fonte: https://github.com/angular/flex-layout/wiki/fxFlex-API
+-->
+<section
+  fxLayout = "column"
+  fxLayoutGap = "5%"
+  fxLayoutAlign = "center center">
+
+  <mat-card
+  class = "card"
+  *ngFor = "let reportagem of reportagensTeste"
+  fxFlex = "1 1 0"
+  >
+    <!-- Nao consegui alinhar o titulo mais a esquerda. Tentei fxLayout-->
+    <mat-card-header>
+      <mat-card-title >{{reportagem.titulo}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image [src]= "reportagem.imagem">
+    <mat-card-content>
+      <p>
+        {{reportagem.texto}}
+      </p>
+    </mat-card-content>
+  </mat-card>
+
+</section>
